@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="320" viewBox="0 0 760 320" role="img" aria-labelledby="title desc">
+<title id="title">Sign Colors Reference</title>
+<desc id="desc">Nine common traffic sign colors with their general meanings: red stop/yield/prohibitive, yellow warning, orange construction/work zone, black regulatory, fluorescent yellow green school/ped/bike emphasis, green direction and distance, white regulatory, brown recreation and cultural, blue motorist services.</desc>
+<style>
+  .label{font:13px/1.2 sans-serif; fill:#222}
+  .swatch{stroke:#222; stroke-width:1}
+  .heading{font:18px sans-serif; font-weight:700; fill:#111}
+  .center{text-anchor:middle}
+</style>
+<rect width="100%" height="100%" fill="#fff"/>
+<text class="heading" x="40" y="40">Sign Colors</text>
+<!-- 3 x 3 grid -->
+<g aria-label="Grid of sign colors" transform="translate(0,0)">
+  <!-- Row 1 -->
+  <g transform="translate(100,90)">
+    <rect class="swatch" x="-30" y="-30" width="60" height="60" fill="#d50000"/>
+    <text class="label center" x="0" y="45">Red = Stop / Yield / Prohibited</text>
+  </g>
+  <g transform="translate(260,90)">
+    <rect class="swatch" x="-30" y="-30" width="60" height="60" fill="#ffeb3b"/>
+    <text class="label center" x="0" y="45">Yellow = Warning</text>
+  </g>
+  <g transform="translate(420,90)">
+    <rect class="swatch" x="-30" y="-30" width="60" height="60" fill="#ff6d00"/>
+    <text class="label center" x="0" y="45">Orange = Construction</text>
+  </g>
+  <!-- Row 2 -->
+  <g transform="translate(100,180)">
+    <rect class="swatch" x="-30" y="-30" width="60" height="60" fill="#000"/>
+    <text class="label center" x="0" y="45">Black = Regulatory</text>
+  </g>
+  <g transform="translate(260,180)">
+    <rect class="swatch" x="-30" y="-30" width="60" height="60" fill="#b5ff00"/>
+    <text class="label center" x="0" y="45">Yellow Green = School / Ped / Bike</text>
+  </g>
+  <g transform="translate(420,180)">
+    <rect class="swatch" x="-30" y="-30" width="60" height="60" fill="#00b35a"/>
+    <text class="label center" x="0" y="45">Green = Direction &amp; Distance</text>
+  </g>
+  <!-- Row 3 -->
+  <g transform="translate(100,270)">
+    <rect class="swatch" x="-30" y="-30" width="60" height="60" fill="#ffffff"/>
+    <rect x="-30" y="-30" width="60" height="60" fill="none" stroke="#222" stroke-width="1"/>
+    <text class="label center" x="0" y="45">White = Regulatory</text>
+  </g>
+  <g transform="translate(260,270)">
+    <rect class="swatch" x="-30" y="-30" width="60" height="60" fill="#5d0b0b"/>
+    <text class="label center" x="0" y="45">Brown = Recreation &amp; Cultural</text>
+  </g>
+  <g transform="translate(420,270)">
+    <rect class="swatch" x="-30" y="-30" width="60" height="60" fill="#004bff"/>
+    <text class="label center" x="0" y="45">Blue = Motorist Services</text>
+  </g>
+</g>
+</svg>

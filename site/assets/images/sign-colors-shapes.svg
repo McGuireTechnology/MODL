@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="700" viewBox="0 0 760 700" role="img" aria-labelledby="title desc">
+<title id="title">Sign Colors and Shapes Reference</title>
+<desc id="desc">Grid layout of sign color meanings (red, yellow, orange, black, yellow-green, green, white, brown, blue) and standard sign shapes (octagon stop, triangle yield, circle railroad, crossbuck railroad, vertical rectangle regulatory, horizontal rectangle guide, pennant no passing, diamond warning, pentagon school).</desc>
+<style>
+  .label{font:13px/1.2 sans-serif; fill:#222}
+  .swatch{stroke:#222; stroke-width:1}
+  .shape{fill:#262a2e; stroke:#262a2e; stroke-width:2}
+  .heading{font:18px sans-serif; font-weight:700; fill:#111}
+  .center{text-anchor:middle}
+</style>
+<rect width="100%" height="100%" fill="#fff"/>
+
+<!-- Headings -->
+<text class="heading" x="40" y="40">Sign Colors</text>
+
+<!-- Color Grid (3 x 3) -->
+<g id="colors" aria-label="Sign color meanings">
+  <!-- Row 1 -->
+  <g transform="translate(100,70)">
+    <rect class="swatch" x="-30" y="-30" width="60" height="60" fill="#d50000"/>
+    <text class="label center" x="0" y="45">Red = Stop / Yield / Prohibited</text>
+  </g>
+  <g transform="translate(260,70)">
+    <rect class="swatch" x="-30" y="-30" width="60" height="60" fill="#ffeb3b"/>
+    <text class="label center" x="0" y="45">Yellow = Warning</text>
+  </g>
+  <g transform="translate(420,70)">
+    <rect class="swatch" x="-30" y="-30" width="60" height="60" fill="#ff6d00"/>
+    <text class="label center" x="0" y="45">Orange = Construction</text>
+  </g>
+  <!-- Row 2 -->
+  <g transform="translate(100,160)">
+    <rect class="swatch" x="-30" y="-30" width="60" height="60" fill="#000"/>
+    <text class="label center" x="0" y="45">Black = Regulatory</text>
+  </g>
+  <g transform="translate(260,160)">
+    <rect class="swatch" x="-30" y="-30" width="60" height="60" fill="#b5ff00"/>
+    <text class="label center" x="0" y="45">Yellow Green = School / Ped / Bike</text>
+  </g>
+  <g transform="translate(420,160)">
+    <rect class="swatch" x="-30" y="-30" width="60" height="60" fill="#00b35a"/>
+    <text class="label center" x="0" y="45">Green = Direction &amp; Distance</text>
+  </g>
+  <!-- Row 3 -->
+  <g transform="translate(100,250)">
+    <rect class="swatch" x="-30" y="-30" width="60" height="60" fill="#ffffff"/>
+    <rect x="-30" y="-30" width="60" height="60" fill="none" stroke="#222" stroke-width="1"/>
+    <text class="label center" x="0" y="45">White = Regulatory</text>
+  </g>
+  <g transform="translate(260,250)">
+    <rect class="swatch" x="-30" y="-30" width="60" height="60" fill="#5d0b0b"/>
+    <text class="label center" x="0" y="45">Brown = Recreation &amp; Cultural</text>
+  </g>
+  <g transform="translate(420,250)">
+    <rect class="swatch" x="-30" y="-30" width="60" height="60" fill="#004bff"/>
+    <text class="label center" x="0" y="45">Blue = Motorist Services</text>
+  </g>
+</g>
+
+<!-- Shapes Heading -->
+<text class="heading" x="40" y="360">Sign Shapes</text>
+
+<!-- Shapes Grid (3 x 3) -->
+<g id="shapes" aria-label="Standard sign shape meanings">
+  <!-- Row 1 -->
+  <g transform="translate(110,410)">
+    <!-- Octagon -->
+    <polygon class="shape" points="-30,-30 0,-30 30,0 30,30 0,60 -30,60 -60,30 -60,0"/>
+    <text class="label center" x="-15" y="85">Octagon = Stop</text>
+  </g>
+  <g transform="translate(290,410)">
+    <!-- Triangle (Yield) pointing down -->
+    <polygon class="shape" points="0,-30 55,60 -55,60"/>
+    <text class="label center" x="0" y="85">Triangle = Yield</text>
+  </g>
+  <g transform="translate(470,410)">
+    <!-- Circle (Railroad) -->
+    <circle class="shape" cx="0" cy="15" r="45"/>
+    <text class="label center" x="0" y="85">Round = Railroad</text>
+  </g>
+  <!-- Row 2 -->
+  <g transform="translate(110,530)">
+    <!-- Crossbuck -->
+    <g>
+      <rect class="shape" x="-6" y="-55" width="12" height="110" transform="rotate(45)"/>
+      <rect class="shape" x="-6" y="-55" width="12" height="110" transform="rotate(-45)"/>
+    </g>
+    <text class="label center" x="0" y="85">Crossbuck = Railroad</text>
+  </g>
+  <g transform="translate(290,530)">
+    <!-- Vertical Rectangle -->
+    <rect class="shape" x="-30" y="-45" width="60" height="110"/>
+    <text class="label center" x="0" y="85">Vertical Rectangle = Regulatory</text>
+  </g>
+  <g transform="translate(470,530)">
+    <!-- Horizontal Rectangle -->
+    <rect class="shape" x="-70" y="-15" width="140" height="60"/>
+    <text class="label center" x="0" y="85">Horizontal Rectangle = Guide</text>
+  </g>
+  <!-- Row 3 -->
+  <g transform="translate(110,650)">
+    <!-- Pennant -->
+    <polygon class="shape" points="-50,-25 50,10 -50,45"/>
+    <text class="label center" x="0" y="70">Pennant = No Passing</text>
+  </g>
+  <g transform="translate(290,650)">
+    <!-- Diamond -->
+    <polygon class="shape" points="0,-40 40,0 0,40 -40,0"/>
+    <text class="label center" x="0" y="70">Diamond = Warning</text>
+  </g>
+  <g transform="translate(470,650)">
+    <!-- Pentagon -->
+    <polygon class="shape" points="0,-45 35,-5 35,50 -35,50 -35,-5"/>
+    <text class="label center" x="0" y="70">Pentagon = School</text>
+  </g>
+</g>
+</svg>

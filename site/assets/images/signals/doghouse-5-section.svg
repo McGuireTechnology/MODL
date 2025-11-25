@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="120" viewBox="0 0 90 120" role="img" aria-label="Traditional 5-section doghouse left-turn signal (red, yellow, green circles; yellow, green left arrows)">
+<defs>
+  <style>
+    .back{fill:#222;stroke:#444;stroke-width:2}
+    .dark{fill:#2b2b2b}
+    @keyframes phase1{0%,20%{opacity:1}21%,100%{opacity:0}}
+    @keyframes phase2{0%,20%{opacity:0}21%,40%{opacity:1}41%,100%{opacity:0}}
+    @keyframes phase3{0%,40%{opacity:0}41%,60%{opacity:1}61%,100%{opacity:0}}
+    @keyframes phase4{0%,60%{opacity:0}61%,80%{opacity:1}81%,100%{opacity:0}}
+    @keyframes phase5{0%,80%{opacity:0}81%,100%{opacity:1}}
+    .p1{animation:phase1 10s linear infinite}
+    .p2{animation:phase2 10s linear infinite}
+    .p3{animation:phase3 10s linear infinite}
+    .p4{animation:phase4 10s linear infinite}
+    .p5{animation:phase5 10s linear infinite}
+  </style>
+</defs>
+<!-- Doghouse backing shape -->
+<path class="back" d="M10 10 h70 l10 15 v75 a10 10 0 0 1 -10 10 H10 a10 10 0 0 1 -10 -10 V25 Z"/>
+
+<!-- Dark lenses (always visible) -->
+<circle class="dark" cx="45" cy="30" r="12"/>
+<circle class="dark" cx="60" cy="56" r="12"/>
+<circle class="dark" cx="60" cy="82" r="12"/>
+
+<!-- Phase 1: Red (stop) -->
+<g class="p1">
+  <circle cx="45" cy="30" r="12" fill="#d50000"/>
+</g>
+
+<!-- Phase 2: Green circle + Green arrow (protected left) -->
+<g class="p2">
+  <circle cx="60" cy="82" r="12" fill="#00b35a"/>
+  <path d="M38 82 H22 L26 78 M22 82 L26 86" fill="none" stroke="#00b35a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+
+<!-- Phase 3: Yellow circle + Yellow arrow (clearance) -->
+<g class="p3">
+  <circle cx="60" cy="56" r="12" fill="#ffeb3b"/>
+  <path d="M38 56 H22 L26 52 M22 56 L26 60" fill="none" stroke="#ffeb3b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+
+<!-- Phase 4: Green circle (permissive left, yield to oncoming) -->
+<g class="p4">
+  <circle cx="60" cy="82" r="12" fill="#00b35a"/>
+</g>
+
+<!-- Phase 5: Yellow circle (clearance) -->
+<g class="p5">
+  <circle cx="60" cy="56" r="12" fill="#ffeb3b"/>
+</g>
+</svg>

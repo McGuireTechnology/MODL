@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" role="img" aria-label="Work zone cone">
+<rect width="60" height="60" fill="#fff"/>
+<path d="M20 50 L30 10 L40 50 Z" fill="#ff6d00" stroke="#222" stroke-width="1"/>
+<rect x="26" y="24" width="8" height="4" fill="#fff"/>
+<rect x="24" y="34" width="12" height="5" fill="#fff"/>
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="240" viewBox="0 0 160 240" role="img" aria-label="Broken white center line with top-down cars">
+<defs>
+  <pattern id="asphalt2" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+    <rect width="4" height="4" fill="#2d2d2d"/>
+    <circle cx="1" cy="1" r="0.3" fill="#3a3a3a"/>
+    <circle cx="3" cy="2" r="0.4" fill="#252525"/>
+    <circle cx="2" cy="3.5" r="0.3" fill="#323232"/>
+  </pattern>
+  <linearGradient id="whiteGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+    <stop offset="50%" style="stop-color:#f5f5f5;stop-opacity:1" />
+    <stop offset="100%" style="stop-color:#e8e8e8;stop-opacity:1" />
+  </linearGradient>
+</defs>
+<!-- Asphalt road surface -->
+<rect width="160" height="240" fill="url(#asphalt2)"/>
+<!-- White edge lines -->
+<rect x="10" y="0" width="3" height="240" fill="#fff" opacity="0.6"/>
+<rect x="147" y="0" width="3" height="240" fill="#fff" opacity="0.6"/>
+<!-- Broken white center line (vertical dashes) -->
+<rect x="76" y="10" width="8" height="30" fill="url(#whiteGrad)"/>
+<rect x="76" y="50" width="8" height="30" fill="url(#whiteGrad)"/>
+<rect x="76" y="90" width="8" height="30" fill="url(#whiteGrad)"/>
+<rect x="76" y="130" width="8" height="30" fill="url(#whiteGrad)"/>
+<rect x="76" y="170" width="8" height="30" fill="url(#whiteGrad)"/>
+<rect x="76" y="210" width="8" height="30" fill="url(#whiteGrad)"/>
+<!-- Top-down car on right (your lane, going up) -->
+<g transform="translate(95, 170)">
+  <rect x="0" y="0" width="40" height="60" rx="8" fill="#2563eb" stroke="#1e40af" stroke-width="2"/>
+  <rect x="5" y="5" width="30" height="20" fill="#87ceeb" opacity="0.7"/>
+  <circle cx="10" cy="50" r="6" fill="#1a1a1a"/>
+  <circle cx="30" cy="50" r="6" fill="#1a1a1a"/>
+  <circle cx="10" cy="15" r="6" fill="#1a1a1a"/>
+  <circle cx="30" cy="15" r="6" fill="#1a1a1a"/>
+</g>
+<!-- Oncoming car on left (opposite lane, going down) -->
+<g transform="translate(25, 30)">
+  <rect x="0" y="0" width="40" height="60" rx="8" fill="#dc2626" stroke="#991b1b" stroke-width="2"/>
+  <rect x="5" y="35" width="30" height="20" fill="#87ceeb" opacity="0.7"/>
+  <circle cx="10" cy="10" r="6" fill="#1a1a1a"/>
+  <circle cx="30" cy="10" r="6" fill="#1a1a1a"/>
+  <circle cx="10" cy="45" r="6" fill="#1a1a1a"/>
+  <circle cx="30" cy="45" r="6" fill="#1a1a1a"/>
+</g>
+</svg>

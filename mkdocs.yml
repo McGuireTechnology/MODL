@@ -1,0 +1,86 @@
+site_name: Missouri Drivers Guide Workbook
+site_description: Study workbook for Missouri Drivers Guide.
+site_url: ""
+repo_url: ""
+nav:
+    - Home: index.md
+    - Study Guide: study_guide.md
+    - Outline: outline.md
+    - 1 - License Basics:
+        - Overview: 01-license/index.md
+        - Quiz: 01-license/quiz.md
+    - 2 - Exam Process:
+        - Overview: 02-exam/index.md
+        - Quiz: 02-exam/quiz.md
+    - 3 - Signs & Markings:
+        - Overview: 03-signs/index.md
+        - Quiz: 03-signs/quiz.md
+    - 4 - Rules of the Road:
+        - Overview: 04-rules/index.md
+        - Quiz: 04-rules/quiz.md
+    - 5 - Parking:
+        - Overview: 05-parking/index.md
+        - Quiz: 05-parking/quiz.md
+    - 6 - Highway Driving:
+        - Overview: 06-highway/index.md
+        - Quiz: 06-highway/quiz.md
+    - 7 - Sharing the Road:
+        - Overview: 07-sharing/index.md
+        - Quiz: 07-sharing/quiz.md
+    - 8 - Everyday Driving Tips:
+        - Overview: 08-everyday/index.md
+        - Quiz: 08-everyday/quiz.md
+    - 9 - Special Conditions:
+        - Overview: 09-conditions/index.md
+        - Quiz: 09-conditions/quiz.md
+    - 10 - Be in Shape to Drive:
+        - Overview: 10-fitness/index.md
+        - Quiz: 10-fitness/quiz.md
+    - 11 - Point System:
+        - Overview: 11-points/index.md
+        - Quiz: 11-points/quiz.md
+    - 12 - Titling & Registration:
+        - Overview: 12-titling/index.md
+        - Quiz: 12-titling/quiz.md
+    - 13 - Mandatory Insurance:
+        - Overview: 13-insurance/index.md
+        - Quiz: 13-insurance/quiz.md
+    - 14 - Equipment & Inspections:
+        - Overview: 14-equipment/index.md
+        - Quiz: 14-equipment/quiz.md
+    - 16 - Distracted Driving:
+        - Overview: 16-distracted/index.md
+        - Quiz: 16-distracted/quiz.md
+  
+  
+theme:
+    name: material
+    custom_dir: overrides
+    logo: assets/images/logo.svg
+    favicon: assets/images/favicon.svg
+    palette:
+      # Road-inspired color scheme
+      scheme: default
+      primary: blue grey
+      accent: amber
+    features:
+        - navigation.footer
+        #- navigation.tabs
+        - navigation.sections
+        - navigation.top
+extra_javascript:
+    - assets/js/flashcards.js
+
+plugins:
+    - search
+    - mkdocs_quiz
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - footnotes
+  - tables
+hooks:
+    - hooks.py
+extra:
+  disclaimer: "Always verify numeric limits & statutes in the official Missouri Driver Guide."

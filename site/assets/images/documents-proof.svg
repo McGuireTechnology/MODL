@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="170" role="img" aria-labelledby="title desc">
+<title id="title">Required Proofs</title>
+<desc id="desc">Identity and lawful presence, Social Security number, and Missouri residency proofs.</desc>
+<style>
+text{font:14px sans-serif;fill:#222}
+.card{stroke:#37474f;stroke-width:2;rx:10}
+.id{fill:#e1bee7}
+.ssn{fill:#b3e5fc}
+.res{fill:#dcedc8}
+</style>
+<rect width="680" height="170" fill="#fff"/>
+<rect class="card id" x="40" y="40" width="180" height="90"/>
+<text x="130" y="80" text-anchor="middle" font-weight="bold">Identity</text>
+<text x="130" y="100" text-anchor="middle" font-size="12">Lawful presence</text>
+<rect class="card ssn" x="250" y="40" width="180" height="90"/>
+<text x="340" y="80" text-anchor="middle" font-weight="bold">SSN</text>
+<text x="340" y="100" text-anchor="middle" font-size="12">Social Security</text>
+<rect class="card res" x="460" y="40" width="180" height="90"/>
+<text x="550" y="80" text-anchor="middle" font-weight="bold">Residency</text>
+<text x="550" y="100" text-anchor="middle" font-size="12">Missouri address</text>
+</svg>

@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "modl-class-f-workbook"
+version = "0.1.0"
+description = "MkDocs site and study workbook for Missouri Class F driver license preparation"
+authors = ["Your Name <you@example.com>"]
+license = "CC-BY-4.0"
+readme = "README.md"
+# This project is documentation-only; disable package mode to avoid installation errors.
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+mkdocs = "^1.5.0"
+mkdocs-material = "^9.5.0"
+mkdocs-quiz = "^1.1.0"
+mkdocs-exclude = "^1.0.2"
+setuptools = ">=68.0.0"
+
+[tool.poetry.group.dev.dependencies]
+# Optional: add markdown linting or testing tools later
+mdformat = "^0.7.17"
+
+[tool.poetry.extras]
+# Placeholder for future optional groups
+
+[tool.poetry.urls]
+"Repository" = ""
+"Documentation" = ""
+
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="180" viewBox="0 0 50 180" role="img" aria-label="5-head protected/permissive left turn signal (red, yellow, green through; yellow and green left arrows)">
+<defs>
+  <style>
+    .dark{fill:#2b2b2b}
+    @keyframes phase1{0%,20%{opacity:1}21%,100%{opacity:0}}
+    @keyframes phase2{0%,20%{opacity:0}21%,40%{opacity:1}41%,100%{opacity:0}}
+    @keyframes phase3{0%,40%{opacity:0}41%,60%{opacity:1}61%,100%{opacity:0}}
+    @keyframes phase4{0%,60%{opacity:0}61%,80%{opacity:1}81%,100%{opacity:0}}
+    @keyframes phase5{0%,80%{opacity:0}81%,100%{opacity:1}}
+    .p1{animation:phase1 10s linear infinite}
+    .p2{animation:phase2 10s linear infinite}
+    .p3{animation:phase3 10s linear infinite}
+    .p4{animation:phase4 10s linear infinite}
+    .p5{animation:phase5 10s linear infinite}
+  </style>
+</defs>
+<rect x="2" y="2" width="46" height="176" rx="6" fill="#222"/>
+
+<!-- Dark lenses (always visible) -->
+<circle class="dark" cx="25" cy="25" r="15"/>
+<circle class="dark" cx="25" cy="65" r="15"/>
+<circle class="dark" cx="25" cy="105" r="15"/>
+
+<!-- Phase 1: Red (stop) -->
+<g class="p1">
+  <circle cx="25" cy="25" r="15" fill="#d50000"/>
+</g>
+
+<!-- Phase 2: Red + Green arrow (protected left) -->
+<g class="p2">
+  <circle cx="25" cy="25" r="15" fill="#d50000"/>
+  <path d="M38 163 H20 L24 159 M20 163 L24 167" fill="none" stroke="#00b35a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+
+<!-- Phase 3: Red + Yellow arrow (clearance) -->
+<g class="p3">
+  <circle cx="25" cy="25" r="15" fill="#d50000"/>
+  <path d="M38 138 H20 L24 134 M20 138 L24 142" fill="none" stroke="#ffeb3b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+
+<!-- Phase 4: Green circle (permissive left + through) -->
+<g class="p4">
+  <circle cx="25" cy="105" r="15" fill="#00b35a"/>
+</g>
+
+<!-- Phase 5: Yellow circle (clearance) -->
+<g class="p5">
+  <circle cx="25" cy="65" r="15" fill="#ffeb3b"/>
+</g>
+</svg>

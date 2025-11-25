@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="160" role="img" aria-labelledby="title desc">
+<title id="title">Hydroplaning Concept</title>
+<desc id="desc">Tire rides on water layer losing contact; ease off accelerator and steer straight.</desc>
+<style>
+text{font:13px sans-serif;fill:#222}
+.tire{fill:#455a64;stroke:#263238;stroke-width:2}
+.water{fill:#90caf9}
+.road{fill:#b0bec5}
+.arrow{stroke:#d32f2f;stroke-width:3;marker-end:url(#ar)}
+</style>
+<defs>
+<marker id="ar" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" fill="#d32f2f"/>
+</marker>
+</defs>
+<rect width="600" height="160" fill="#fff"/>
+<rect class="road" x="20" y="40" width="560" height="80" rx="6"/>
+<rect class="water" x="200" y="90" width="160" height="20" rx="4"/>
+<circle class="tire" cx="250" cy="80" r="25"/>
+<circle class="tire" cx="330" cy="80" r="25"/>
+<text x="210" y="135">Water layer lifts tires reducing traction</text>
+<line class="arrow" x1="250" y1="55" x2="250" y2="35"/>
+<text x="260" y="40">Loss of grip</text>
+</svg>

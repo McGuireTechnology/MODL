@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="180" role="img" aria-labelledby="title desc">
+<title id="title">Distraction Types</title>
+<desc id="desc">Visual (eyes), Manual (hands), Cognitive (mind) distraction categories.</desc>
+<style>
+text{font:14px sans-serif;fill:#222}
+.cat{stroke:#424242;stroke-width:2;rx:8}
+.visual{fill:#ffcc80}
+.manual{fill:#80cbc4}
+.cognitive{fill:#ce93d8}
+</style>
+<rect width="640" height="180" fill="#fff"/>
+<rect class="cat visual" x="40" y="40" width="150" height="70"/>
+<text x="115" y="75" text-anchor="middle" font-weight="bold">Visual</text>
+<text x="115" y="95" text-anchor="middle" font-size="12">Eyes off road</text>
+<rect class="cat manual" x="245" y="40" width="150" height="70"/>
+<text x="320" y="75" text-anchor="middle" font-weight="bold">Manual</text>
+<text x="320" y="95" text-anchor="middle" font-size="12">Hands off wheel</text>
+<rect class="cat cognitive" x="450" y="40" width="150" height="70"/>
+<text x="525" y="75" text-anchor="middle" font-weight="bold">Cognitive</text>
+<text x="525" y="95" text-anchor="middle" font-size="12">Mind off driving</text>
+</svg>

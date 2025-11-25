@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="120" viewBox="0 0 50 120" role="img" aria-label="3-section flashing yellow arrow left-turn signal">
+<style>
+@keyframes flashArrow{0%,60%{opacity:1}61%,100%{opacity:0.2}}
+.flash{animation:flashArrow 1.2s linear infinite}
+</style>
+<rect x="2" y="2" width="46" height="116" rx="6" fill="#222"/>
+<!-- Left-pointing arrows with stems ("<-" style) -->
+<path d="M36 20 H18 L22 16 M18 20 L22 24" fill="none" stroke="#d50000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path class="flash" d="M36 55 H18 L22 51 M18 55 L22 59" fill="none" stroke="#ffeb3b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M36 90 H18 L22 86 M18 90 L22 94" fill="none" stroke="#00b35a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

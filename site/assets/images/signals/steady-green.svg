@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="120" viewBox="0 0 50 120" role="img" aria-label="Steady green signal">
+<rect x="2" y="2" width="46" height="116" rx="6" fill="#222"/>
+<circle cx="25" cy="25" r="15" fill="#2b2b2b"/>
+<circle cx="25" cy="60" r="15" fill="#2b2b2b"/>
+<circle cx="25" cy="95" r="15" fill="#00b35a"/>
+</svg>

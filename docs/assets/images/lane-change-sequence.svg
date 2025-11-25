@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="160" role="img" aria-labelledby="title desc">
+<title id="title">Lane Change Sequence</title>
+<desc id="desc">Mirror, signal, shoulder check, adjust, move, cancel.</desc>
+<style>
+text{font:13px sans-serif;fill:#222}
+.car{fill:#a5d6a7;stroke:#1b5e20;stroke-width:2}
+.step{font-weight:bold}
+.arrow{stroke:#fb8c00;stroke-width:3;marker-end:url(#m)}
+</style>
+<defs>
+<marker id="m" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" fill="#fb8c00"/>
+</marker>
+</defs>
+<rect width="660" height="160" fill="#fff"/>
+<text x="10" y="20" class="step">1 Mirror</text>
+<rect x="10" y="30" width="70" height="35" class="car" rx="6"/>
+<text x="100" y="20" class="step">2 Signal</text>
+<rect x="100" y="30" width="70" height="35" class="car" rx="6"/>
+<text x="190" y="20" class="step">3 Shoulder</text>
+<rect x="190" y="30" width="70" height="35" class="car" rx="6"/>
+<text x="280" y="20" class="step">4 Adjust</text>
+<rect x="280" y="30" width="70" height="35" class="car" rx="6"/>
+<text x="370" y="20" class="step">5 Move</text>
+<rect x="370" y="30" width="70" height="35" class="car" rx="6"/>
+<text x="460" y="20" class="step">6 Cancel</text>
+<rect x="460" y="30" width="70" height="35" class="car" rx="6"/>
+<line class="arrow" x1="80" y1="48" x2="100" y2="48"/>
+<line class="arrow" x1="170" y1="48" x2="190" y2="48"/>
+<line class="arrow" x1="260" y1="48" x2="280" y2="48"/>
+<line class="arrow" x1="350" y1="48" x2="370" y2="48"/>
+<line class="arrow" x1="440" y1="48" x2="460" y2="48"/>
+</svg>

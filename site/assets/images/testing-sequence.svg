@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="160" role="img" aria-labelledby="title desc">
+<title id="title">Testing Sequence</title>
+<desc id="desc">Vision screening, knowledge exam, then road test.</desc>
+<style>
+text{font:14px sans-serif;fill:#222}
+.box{rx:10;ry:10;stroke:#37474f;stroke-width:2}
+.vision{fill:#bbdefb}
+.knowledge{fill:#ffe082}
+.road{fill:#c8e6c9}
+.arrow{stroke:#1565c0;stroke-width:3;marker-end:url(#arrow)}
+</style>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" fill="#1565c0"/>
+</marker>
+</defs>
+<rect width="680" height="160" fill="#fff"/>
+<rect class="box vision" x="30" y="45" width="180" height="70"/>
+<text x="120" y="78" text-anchor="middle" font-weight="bold">Vision</text>
+<text x="120" y="98" text-anchor="middle" font-size="12">Screening</text>
+<line class="arrow" x1="210" y1="80" x2="260" y2="80"/>
+<rect class="box knowledge" x="260" y="45" width="180" height="70"/>
+<text x="350" y="78" text-anchor="middle" font-weight="bold">Knowledge</text>
+<text x="350" y="98" text-anchor="middle" font-size="12">Exam</text>
+<line class="arrow" x1="440" y1="80" x2="490" y2="80"/>
+<rect class="box road" x="490" y="45" width="160" height="70"/>
+<text x="570" y="78" text-anchor="middle" font-weight="bold">Road Test</text>
+<text x="570" y="98" text-anchor="middle" font-size="12">Driving Skills</text>
+</svg>

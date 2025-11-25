@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" role="img" aria-label="Flagger holding paddle">
+<rect width="60" height="60" fill="#fff"/>
+<circle cx="30" cy="18" r="8" fill="#444"/>
+<rect x="26" y="26" width="8" height="18" fill="#444"/>
+<rect x="18" y="28" width="8" height="4" fill="#444"/>
+<rect x="34" y="28" width="8" height="4" fill="#444"/>
+<circle cx="46" cy="30" r="6" fill="#ff6d00" stroke="#222" stroke-width="1"/>
+</svg>

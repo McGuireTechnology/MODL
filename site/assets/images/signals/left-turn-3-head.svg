@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="120" viewBox="0 0 50 120" role="img" aria-label="3-head protected left turn signal (red, yellow, green arrows)">
+<rect x="2" y="2" width="46" height="116" rx="6" fill="#222"/>
+<!-- Left-pointing arrows with stem + head ("<-" style) -->
+<path d="M36 20 H18 L22 16 M18 20 L22 24" fill="none" stroke="#d50000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M36 55 H18 L22 51 M18 55 L22 59" fill="none" stroke="#ffeb3b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M36 90 H18 L22 86 M18 90 L22 94" fill="none" stroke="#00b35a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
