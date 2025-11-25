@@ -20,8 +20,10 @@ build: install
 	poetry run mkdocs build
 
 deploy: install
-	poetry run mkdocs build --clean
-	@echo "Add deployment steps (e.g., gh-pages) once repo_url is set."
+	git add -A
+	git commit -m "Deploy updates" || echo "No changes to commit"
+	git push origin main
+	@echo "Pushed to main - GitHub Actions will handle deployment"
 
 format: install
 	poetry run mdformat README.md
