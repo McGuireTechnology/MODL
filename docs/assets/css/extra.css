@@ -1,0 +1,152 @@
+/* Custom styling for Missouri Drivers Guide */
+
+:root {
+  --md-primary-fg-color: #546e7a;
+  --md-accent-fg-color: #ffc107;
+}
+
+/* Enhance code blocks */
+.highlight {
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styled admonitions with better shadows */
+.admonition {
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Make tables more elegant */
+.md-typeset table:not([class]) {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.md-typeset table:not([class]) th {
+  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, var(--md-primary-fg-color--dark) 100%);
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.md-typeset table:not([class]) tr:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+  transition: background-color 0.2s ease;
+}
+
+/* Enhanced navigation tabs */
+.md-tabs {
+  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, var(--md-primary-fg-color--dark) 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* SVG images - ensure they scale nicely */
+img[src$=".svg"] {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Quiz styling improvements */
+.quiz-container {
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(255, 193, 7, 0.05) 0%, rgba(84, 110, 122, 0.05) 100%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin: 1.5rem 0;
+}
+
+/* Flashcard enhancements */
+.flashcards {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+/* Enhance buttons */
+.md-button {
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.md-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.md-button--primary {
+  background: linear-gradient(135deg, var(--md-accent-fg-color) 0%, #ffb300 100%);
+}
+
+/* Disclaimer styling */
+.md-footer-meta {
+  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, var(--md-primary-fg-color--dark) 100%);
+}
+
+/* Enhanced header */
+.md-header {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress bar for navigation */
+.md-progress {
+  height: 3px;
+  background: linear-gradient(90deg, var(--md-accent-fg-color) 0%, #ffb300 100%);
+}
+
+/* Animated signal icons */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* Make the logo subtly animate on hover */
+.md-header__button.md-logo:hover img {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+/* Enhanced search */
+.md-search__input {
+  border-radius: 2rem;
+}
+
+.md-search__input:focus {
+  box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.2);
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #607d8b;
+  --md-accent-fg-color: #ffca28;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Print styles */
+@media print {
+  .md-header,
+  .md-tabs,
+  .md-sidebar,
+  .md-footer {
+    display: none;
+  }
+  
+  .md-content {
+    max-width: 100%;
+  }
+}

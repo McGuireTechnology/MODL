@@ -1,7 +1,10 @@
 site_name: Missouri Drivers Guide Workbook
 site_description: Study workbook for Missouri Drivers Guide.
+site_author: McGuire Technology
 site_url: "https://modl.mcguire.technology"
 repo_url: "https://github.com/McGuireTechnology/MODL"
+repo_name: McGuireTechnology/MODL
+edit_uri: edit/main/docs/
 nav:
     - Home: index.md
     - Study Guide: study_guide.md
@@ -59,15 +62,48 @@ theme:
     logo: assets/images/logo.svg
     favicon: assets/images/favicon.svg
     palette:
-      # Road-inspired color scheme
-      scheme: default
-      primary: blue grey
-      accent: amber
+      # Road-inspired color scheme with dark mode
+      - scheme: default
+        primary: blue grey
+        accent: amber
+        toggle:
+          icon: material/brightness-7
+          name: Switch to dark mode
+      - scheme: slate
+        primary: blue grey
+        accent: amber
+        toggle:
+          icon: material/brightness-4
+          name: Switch to light mode
+    font:
+      text: Roboto
+      code: Roboto Mono
     features:
-        - navigation.footer
-        #- navigation.tabs
+        - navigation.instant
+        - navigation.instant.prefetch
+        - navigation.instant.progress
+        - navigation.tracking
+        - navigation.tabs
+        - navigation.tabs.sticky
         - navigation.sections
+        - navigation.expand
+        - navigation.path
+        - navigation.indexes
         - navigation.top
+        - navigation.footer
+        - toc.follow
+        - toc.integrate
+        - search.suggest
+        - search.highlight
+        - search.share
+        - content.action.edit
+        - content.action.view
+        - content.code.copy
+        - content.code.annotate
+        - announce.dismiss
+extra_css:
+    - assets/css/extra.css
+
 extra_javascript:
     - assets/js/flashcards.js
 
@@ -76,11 +112,67 @@ plugins:
     - mkdocs_quiz
 markdown_extensions:
   - admonition
-  - toc:
-      permalink: true
+  - attr_list
+  - md_in_html
+  - def_list
   - footnotes
   - tables
+  - toc:
+      permalink: true
+      permalink_title: Anchor link to this section
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
 hooks:
     - hooks.py
 extra:
   disclaimer: "Always verify numeric limits & statutes in the official Missouri Driver Guide."
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/McGuireTechnology/MODL
+      name: View source on GitHub
+    - icon: fontawesome/solid/book
+      link: https://dor.mo.gov/driver-license/driver-guide/
+      name: Official Missouri Driver Guide
+  analytics:
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! Help us improve by
+            <a href="https://github.com/McGuireTechnology/MODL/issues/new" target="_blank" rel="noopener">opening an issue</a>.
+  generator: false
+
+copyright: >
+  Copyright &copy; 2025 McGuire Technology –
+  <a href="#__consent">Change cookie settings</a>
