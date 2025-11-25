@@ -1,7 +1,7 @@
 site_name: Missouri Drivers Guide Workbook
 site_description: Study workbook for Missouri Drivers Guide.
-site_url: ""
-repo_url: ""
+site_url: "https://modl.mcguire.technology"
+repo_url: "https://github.com/McGuireTechnology/MODL"
 nav:
     - Home: index.md
     - Study Guide: study_guide.md
