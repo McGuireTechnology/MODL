@@ -18,32 +18,22 @@
     wrap.style.gap = '12px';
 
     cards.forEach((c, idx)=>{
-  const card = document.createElement('div');
-  card.className = 'flashcard';
-  card.style.border = '1px solid #e0e0e0';
-  card.style.borderRadius = '8px';
-  card.style.padding = '12px';
-  card.style.background = 'white';
-  card.style.boxShadow = '0 3px 10px rgba(0,0,0,0.05)';
-
+      const card = document.createElement('div');
+      card.className = 'flashcard';
+      // Remove inline styles - let CSS handle it
+      
       const q = document.createElement('div');
+      q.className = 'flashcard-question';
       q.textContent = c.q;
-      q.style.fontWeight = '600';
-      q.style.marginBottom = '8px';
 
       const a = document.createElement('div');
+      a.className = 'flashcard-answer';
       a.textContent = c.a;
       a.style.display = 'none';
-      a.style.marginTop = '8px';
 
-  const btn = document.createElement('button');
-  btn.textContent = 'Show Answer';
-  btn.className = 'flashcard-toggle';
-  btn.style.fontSize = '0.9rem';
-  btn.style.padding = '6px 10px';
-  btn.style.borderRadius = '6px';
-  btn.style.border = '1px solid var(--md-default-fg-color--lighter, #d0d0d0)';
-  // Do not set background or color inline; allow CSS theme to provide accessible contrast.
+      const btn = document.createElement('button');
+      btn.textContent = 'Show Answer';
+      btn.className = 'flashcard-toggle';
       btn.addEventListener('click', ()=>{
         const showing = a.style.display !== 'none';
         a.style.display = showing ? 'none' : 'block';
@@ -72,52 +62,70 @@
     });
   }
 
-  // Handle initial page load
+  // Initialize immediately if DOM is ready, otherwise wait
   if(document.readyState === 'loading'){
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', function() {
+      init();
+      // Run again after a short delay for late-loaded content
+      setTimeout(init, 100);
+      setTimeout(init, 300);
+      setTimeout(init, 500);
+    });
   } else {
+    // DOM already loaded, run immediately and with delays
     init();
+    setTimeout(init, 50);
+    setTimeout(init, 150);
+    setTimeout(init, 300);
   }
 
-  // Handle MkDocs Material instant navigation
-  // Re-initialize flashcards when content changes
-  document.addEventListener('DOMContentLoaded', function() {
-    // MkDocs Material uses 'instant' navigation which fires custom events
-    var observer = new MutationObserver(function(mutations) {
-      var hasNewFlashcards = false;
-      mutations.forEach(function(mutation) {
-        mutation.addedNodes.forEach(function(node) {
-          if (node.nodeType === 1) { // Element node
-            if (node.classList && node.classList.contains('flashcards')) {
-              hasNewFlashcards = true;
-            } else if (node.querySelector && node.querySelector('.flashcards')) {
-              hasNewFlashcards = true;
-            }
+  // Handle MkDocs Material instant navigation with MutationObserver
+  var observer = new MutationObserver(function(mutations) {
+    var hasNewFlashcards = false;
+    mutations.forEach(function(mutation) {
+      mutation.addedNodes.forEach(function(node) {
+        if (node.nodeType === 1) { // Element node
+          if (node.classList && node.classList.contains('flashcards')) {
+            hasNewFlashcards = true;
+          } else if (node.querySelector && node.querySelector('.flashcards')) {
+            hasNewFlashcards = true;
           }
-        });
+        }
       });
-      if (hasNewFlashcards) {
-        setTimeout(init, 100);
-      }
     });
+    if (hasNewFlashcards) {
+      init();
+      setTimeout(init, 50);
+      setTimeout(init, 150);
+    }
+  });
 
-    // Observe the main content area for changes
-    var content = document.querySelector('.md-content');
+  // Start observing once DOM is ready
+  function startObserving() {
+    var content = document.querySelector('.md-content') || document.querySelector('main') || document.body;
     if (content) {
       observer.observe(content, {
         childList: true,
         subtree: true
       });
     }
-  });
+  }
 
-  // Also listen for location changes (works with instant navigation)
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', startObserving);
+  } else {
+    startObserving();
+  }
+
+  // Location polling for instant navigation
   if (typeof window !== 'undefined') {
     var lastLocation = window.location.href;
     setInterval(function() {
       if (window.location.href !== lastLocation) {
         lastLocation = window.location.href;
-        setTimeout(init, 200);
+        init();
+        setTimeout(init, 100);
+        setTimeout(init, 300);
       }
     }, 500);
   }
