@@ -127,8 +127,16 @@ Proceed to quiz when confident.
 
 ## Quick Flashcards
 
-<div class="flashcards" data-cards='[
-    {"q":"What does an octagon sign mean?","a":"Stop."},
-    {"q":"What does a solid yellow center line indicate?","a":"Do not pass where it is solid on your side."},
-    {"q":"Flashing red vs flashing yellow?","a":"Flashing red means stop; flashing yellow means caution."}
-]'></div>
+## Quick Review
+
+<details><summary>What does an octagon sign mean?</summary>
+Stop.
+</details>
+
+<details><summary>What does a solid yellow center line indicate?</summary>
+Do not pass where it is solid on your side.
+</details>
+
+<details><summary>Flashing red vs flashing yellow?</summary>
+Flashing red means stop; flashing yellow means caution.
+</details>

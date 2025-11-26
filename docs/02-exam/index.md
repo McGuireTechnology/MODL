@@ -163,8 +163,16 @@ Proceed to the Chapter 2 Interactive Quiz when confident.
 
 ## Quick Flashcards
 
-<div class="flashcards" data-cards='[
-    {"q":"What usually comes first on exam day?","a":"Document verification and a vision screening."},
-    {"q":"Name two signs you are road test ready.","a":"Smooth control without prompts and consistent mirror plus shoulder checks."},
-    {"q":"Best way to study for the knowledge exam?","a":"Active recall and spaced practice on rules, signs, and safe driving practices."}
-]'></div>
+## Quick Review
+
+<details><summary>What usually comes first on exam day?</summary>
+Document verification and a vision screening.
+</details>
+
+<details><summary>Name two signs you are road test ready.</summary>
+Smooth control without prompts and consistent mirror plus shoulder checks.
+</details>
+
+<details><summary>Best way to study for the knowledge exam?</summary>
+Active recall and spaced practice on rules, signs, and safe driving practices.
+</details>

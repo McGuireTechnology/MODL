@@ -66,8 +66,16 @@ Proceed to quiz.
 
 ## Quick Flashcards
 
-<div class="flashcards" data-cards='[
-    {"q":"Why low beams in fog?","a":"High beams reflect and create glare; low beams improve visibility."},
-    {"q":"What to do if you hydroplane?","a":"Ease off the accelerator and steer straight until traction returns."},
-    {"q":"Winter bridge hazard?","a":"Bridges freeze first; slow and be gentle with inputs."}
-]'></div>
+## Quick Review
+
+<details><summary>Why low beams in fog?</summary>
+High beams reflect and create glare; low beams improve visibility.
+</details>
+
+<details><summary>What to do if you hydroplane?</summary>
+Ease off the accelerator and steer straight until traction returns.
+</details>
+
+<details><summary>Winter bridge hazard?</summary>
+Bridges freeze first; slow and be gentle with inputs.
+</details>

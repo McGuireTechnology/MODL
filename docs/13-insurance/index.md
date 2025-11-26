@@ -65,8 +65,16 @@ Proceed to quiz.
 
 ## Quick Flashcards
 
-<div class="flashcards" data-cards='[
-    {"q":"What is the purpose of mandatory insurance?","a":"To demonstrate financial responsibility for potential damages."},
-    {"q":"Name one consequence of a lapse.","a":"Fines, registration or license impacts, or higher future premiums."},
-    {"q":"One post-incident best practice?","a":"Document time, location, and conditions; contact your insurer promptly."}
-]'></div>
+## Quick Review
+
+<details><summary>What is the purpose of mandatory insurance?</summary>
+To demonstrate financial responsibility for potential damages.
+</details>
+
+<details><summary>Name one consequence of a lapse.</summary>
+Fines, registration or license impacts, or higher future premiums.
+</details>
+
+<details><summary>One post-incident best practice?</summary>
+Document time, location, and conditions; contact your insurer promptly.
+</details>

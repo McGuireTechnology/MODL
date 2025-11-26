@@ -142,11 +142,19 @@ Proceed to the Chapter 1 Quiz when you can answer these confidently.
 
 ## Quick Flashcards
 
-<div class="flashcards" data-cards='[
-   {"q":"What is the main goal of GDL?","a":"Let new drivers gain experience in lower risk steps before full privileges."},
-   {"q":"What are the three test components in order?","a":"Vision screening, knowledge exam, and road test."},
-   {"q":"Which three proof categories are commonly required?","a":"Identity and lawful presence, Social Security number, and Missouri residency."}
-]'></div>
+## Quick Review
+
+<details><summary>What is the main goal of GDL?</summary>
+Let new drivers gain experience in lower risk steps before full privileges.
+</details>
+
+<details><summary>What are the three test components in order?</summary>
+Vision screening, knowledge exam, and road test.
+</details>
+
+<details><summary>Which three proof categories are commonly required?</summary>
+Identity and lawful presence, Social Security number, and Missouri residency.
+</details>
 
 ---
 

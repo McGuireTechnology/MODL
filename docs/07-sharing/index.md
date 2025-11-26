@@ -65,8 +65,16 @@ Proceed to quiz.
 
 ## Quick Flashcards
 
-<div class="flashcards" data-cards='[
-    {"q":"Red flashing lights and stop arm on a school bus mean?","a":"Stop (with limited divided highway exceptions)."},
-    {"q":"Why give trucks extra space?","a":"They have longer stopping distances and large blind spots."},
-    {"q":"Bicycle passing rule of thumb?","a":"Provide safe lateral clearance and avoid the door zone (verify exact distance)."}
-]'></div>
+## Quick Review
+
+<details><summary>Red flashing lights and stop arm on a school bus mean?</summary>
+Stop (with limited divided highway exceptions).
+</details>
+
+<details><summary>Why give trucks extra space?</summary>
+They have longer stopping distances and large blind spots.
+</details>
+
+<details><summary>Bicycle passing rule of thumb?</summary>
+Provide safe lateral clearance and avoid the door zone (verify exact distance).
+</details>

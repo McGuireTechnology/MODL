@@ -69,8 +69,16 @@ Proceed to quiz.
 
 ## Quick Flashcards
 
-<div class="flashcards" data-cards='[
-    {"q":"Name the three distraction types.","a":"Visual, manual, and cognitive."},
-    {"q":"Why pre-set navigation?","a":"It reduces mid-drive device interaction and distraction."},
-    {"q":"How does fatigue interact with distraction?","a":"It slows reaction and compounds inattention risk; take breaks and increase space."}
-]'></div>
+## Quick Review
+
+<details><summary>Name the three distraction types.</summary>
+Visual, manual, and cognitive.
+</details>
+
+<details><summary>Why pre-set navigation?</summary>
+It reduces mid-drive device interaction and distraction.
+</details>
+
+<details><summary>How does fatigue interact with distraction?</summary>
+It slows reaction and compounds inattention risk; take breaks and increase space.
+</details>

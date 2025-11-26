@@ -67,8 +67,16 @@ Proceed to quiz.
 
 ## Quick Flashcards
 
-<div class="flashcards" data-cards='[
-    {"q":"What does a title prove?","a":"Ownership of the vehicle."},
-    {"q":"What is registration for?","a":"Authorizes lawful road use and links plates and fees."},
-    {"q":"Why maintain current address on records?","a":"Ensures notices and renewals reach you and records remain accurate."}
-]'></div>
+## Quick Review
+
+<details><summary>What does a title prove?</summary>
+Ownership of the vehicle.
+</details>
+
+<details><summary>What is registration for?</summary>
+Authorizes lawful road use and links plates and fees.
+</details>
+
+<details><summary>Why maintain current address on records?</summary>
+Ensures notices and renewals reach you and records remain accurate.
+</details>

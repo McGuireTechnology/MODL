@@ -61,8 +61,16 @@ Proceed to quiz.
 
 ## Quick Flashcards
 
-<div class="flashcards" data-cards='[
-    {"q":"What do points represent?","a":"Violation consequences that accumulate over time."},
-    {"q":"Why can insurance premiums rise?","a":"Points indicate higher risk based on violations."},
-    {"q":"One prevention strategy?","a":"Maintain defensive driving habits and plan trips to avoid rushed speeding."}
-]'></div>
+## Quick Review
+
+<details><summary>What do points represent?</summary>
+Violation consequences that accumulate over time.
+</details>
+
+<details><summary>Why can insurance premiums rise?</summary>
+Points indicate higher risk based on violations.
+</details>
+
+<details><summary>One prevention strategy?</summary>
+Maintain defensive driving habits and plan trips to avoid rushed speeding.
+</details>

@@ -79,8 +79,16 @@ Proceed to quiz when ready.
 
 ## Quick Flashcards
 
-<div class="flashcards" data-cards='[
-    {"q":"At a 4-way stop with simultaneous arrival, who goes first?","a":"Yield to the driver on your right."},
-    {"q":"What is the basic speed law?","a":"You must drive at a safe speed for conditions, even if that is below the posted limit."},
-    {"q":"List the lane change sequence.","a":"Mirror, signal, shoulder check, adjust speed/gap, move, cancel signal."}
-]'></div>
+## Quick Review
+
+<details><summary>At a 4-way stop with simultaneous arrival, who goes first?</summary>
+Yield to the driver on your right.
+</details>
+
+<details><summary>What is the basic speed law?</summary>
+You must drive at a safe speed for conditions, even if that is below the posted limit.
+</details>
+
+<details><summary>List the lane change sequence.</summary>
+Mirror, signal, shoulder check, adjust speed/gap, move, cancel signal.
+</details>

@@ -59,8 +59,16 @@ Proceed to quiz.
 
 ## Quick Flashcards
 
-<div class="flashcards" data-cards='[
-    {"q":"What is a good scan pattern?","a":"Front, mirrors, instruments, and blind spots when needed."},
-    {"q":"Why keep an escape route?","a":"To avoid being boxed in and to have space for evasive action."},
-    {"q":"When should you signal?","a":"Before braking or lateral movement, and cancel promptly after."}
-]'></div>
+## Quick Review
+
+<details><summary>What is a good scan pattern?</summary>
+Front, mirrors, instruments, and blind spots when needed.
+</details>
+
+<details><summary>Why keep an escape route?</summary>
+To avoid being boxed in and to have space for evasive action.
+</details>
+
+<details><summary>When should you signal?</summary>
+Before braking or lateral movement, and cancel promptly after.
+</details>

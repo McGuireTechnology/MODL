@@ -69,9 +69,17 @@ Proceed to quiz.
 
 ## Quick Flashcards
 
-<div class="flashcards" data-cards='[
-    {"q":"Uphill with a curb: wheel direction?","a":"Turn wheels away from the curb."},
-    {"q":"No curb on a hill: wheel direction?","a":"Turn wheels toward the road edge."},
-    {"q":"One common prohibited parking area?","a":"Near fire hydrants, crosswalks, or driveways (verify exact distances)."}
-]'></div>
+## Quick Review
+
+<details><summary>Uphill with a curb: wheel direction?</summary>
+Turn wheels away from the curb.
+</details>
+
+<details><summary>No curb on a hill: wheel direction?</summary>
+Turn wheels toward the road edge.
+</details>
+
+<details><summary>One common prohibited parking area?</summary>
+Near fire hydrants, crosswalks, or driveways (verify exact distances).
+</details>
 

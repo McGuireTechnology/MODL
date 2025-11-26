@@ -67,8 +67,16 @@ Proceed to quiz.
 
 ## Quick Flashcards
 
-<div class="flashcards" data-cards='[
-    {"q":"How do you merge safely?","a":"Match traffic speed, signal, check mirrors and shoulder, and choose a clear gap."},
-    {"q":"When is it safe to move back after passing?","a":"When you can see the passed vehicle's front in your mirror."},
-    {"q":"Why increase following gap at higher speeds?","a":"Stopping distance and exposure increase with speed."}
-]'></div>
+## Quick Review
+
+<details><summary>How do you merge safely?</summary>
+Match traffic speed, signal, check mirrors and shoulder, and choose a clear gap.
+</details>
+
+<details><summary>When is it safe to move back after passing?</summary>
+When you can see the passed vehicle's front in your mirror.
+</details>
+
+<details><summary>Why increase following gap at higher speeds?</summary>
+Stopping distance and exposure increase with speed.
+</details>

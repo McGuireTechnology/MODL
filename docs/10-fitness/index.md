@@ -66,8 +66,16 @@ Proceed to quiz.
 
 ## Quick Flashcards
 
-<div class="flashcards" data-cards='[
-    {"q":"Why avoid driving after a first dose of some meds?","a":"You don't yet know how they affect alertness or reaction time."},
-    {"q":"Two fatigue warning signs?","a":"Yawning, lane drifting, or microsleeps."},
-    {"q":"Name the three distraction types.","a":"Visual, manual, and cognitive."}
-]'></div>
+## Quick Review
+
+<details><summary>Why avoid driving after a first dose of some meds?</summary>
+You don't yet know how they affect alertness or reaction time.
+</details>
+
+<details><summary>Two fatigue warning signs?</summary>
+Yawning, lane drifting, or microsleeps.
+</details>
+
+<details><summary>Name the three distraction types.</summary>
+Visual, manual, and cognitive.
+</details>

@@ -71,8 +71,16 @@ Proceed to quiz.
 
 ## Quick Flashcards
 
-<div class="flashcards" data-cards='[
-    {"q":"Name two critical safety items.","a":"Brakes and lights/signals (also tires, mirrors, and wipers)."},
-    {"q":"Why check tires often?","a":"Proper tread and inflation are key for grip, handling, and braking."},
-    {"q":"What does inspection help ensure?","a":"That the vehicle is roadworthy and compliant with safety/emissions rules where required."}
-]'></div>
+## Quick Review
+
+<details><summary>Name two critical safety items.</summary>
+Brakes and lights/signals (also tires, mirrors, and wipers).
+</details>
+
+<details><summary>Why check tires often?</summary>
+Proper tread and inflation are key for grip, handling, and braking.
+</details>
+
+<details><summary>What does inspection help ensure?</summary>
+That the vehicle is roadworthy and compliant with safety/emissions rules where required.
+</details>
