@@ -1,6 +1,6 @@
 # Outline (Chapter-Aligned)
 
-Below is the chapter-aligned structure based on the official Missouri Driver Guide. Legacy "Module" drafts will be merged into these chapters.
+Below is the chapter-aligned structure based on the official Missouri Driver Guide. Each chapter includes an overview page and an interactive quiz.
 
 ## Chapter 1 – The Missouri Driver License
 - Licensing stages (GDL)
@@ -78,9 +78,20 @@ Below is the chapter-aligned structure based on the official Missouri Driver Gui
 - Mitigation strategies
 
 ---
-Commercial Vehicles (Chapter 15) intentionally excluded from Class F study scope.
 
-Next Steps: Flesh out each chapter with paraphrased content, then add chapter quizzes and integrate a comprehensive practice exam.
+## Practice Exams
+
+After completing all chapters, test your comprehensive knowledge with three full-length practice exams:
+
+- **Practice Exam 1** – 25 questions covering all topics
+- **Practice Exam 2** – 25 questions with different scenarios
+- **Practice Exam 3** – 25 questions for thorough preparation
+
+Each practice exam simulates the actual Missouri Class F knowledge test. You need **20 correct answers out of 25 questions** to pass (80%).
+
+---
+
+**Note:** Commercial Vehicles (Chapter 15) intentionally excluded from Class F study scope.
 
 ## Visual overview
 
