@@ -1,14 +1,10 @@
 # Practice Exam 1
 
-!!! tip "Exam Instructions"
-    This practice exam simulates the actual Missouri Class F knowledge test. You need **20 correct answers out of 25 questions** to pass (80%).
-    
-    - Take your time and read each question carefully
-    - Answer all questions before checking your results
-    - Questions cover all topics from the Missouri Driver Guide
-    - Passing score: 80% (20 out of 25 questions)
+<!-- mkdocs-quiz intro -->
+This practice exam simulates the actual Missouri Class F knowledge test. You need **20 correct answers out of 25 questions** to pass (80%).
 
----
+Take your time and read each question carefully. Answer all questions before checking your results.
+<!-- mkdocs-quiz intro end -->
 
 ## Full Practice Test
 
@@ -261,6 +257,10 @@ Your vehicle must be inspected every:
 
 Missouri requires safety inspections every two years (or annually for certain vehicles).
 </quiz>
+
+<!-- mkdocs-quiz results -->
+You have completed the practice exam. Review your results above.
+<!-- mkdocs-quiz results end -->
 
 ## Scoring Guide
 

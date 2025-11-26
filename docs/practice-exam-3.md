@@ -1,14 +1,10 @@
 # Practice Exam 3
 
-!!! tip "Exam Instructions"
-    This is your third practice exam for the Missouri Class F knowledge test. You need **20 correct answers out of 25 questions** to pass (80%).
-    
-    - Take your time and read each question carefully
-    - Answer all questions before checking your results
-    - Questions cover all topics from the Missouri Driver Guide
-    - Passing score: 80% (20 out of 25 questions)
+<!-- mkdocs-quiz intro -->
+This is your third practice exam for the Missouri Class F knowledge test. You need **20 correct answers out of 25 questions** to pass (80%).
 
----
+Take your time and read each question carefully. Answer all questions before checking your results.
+<!-- mkdocs-quiz intro end -->
 
 ## Full Practice Test 3
 
@@ -261,6 +257,10 @@ Tire tread depth should be at least:
 
 Missouri law requires at least 2/32 inch of tire tread depth (use the penny test - Lincoln's head should be partially covered).
 </quiz>
+
+<!-- mkdocs-quiz results -->
+You have completed the practice exam. Review your results above.
+<!-- mkdocs-quiz results end -->
 
 ## Scoring Guide
 
