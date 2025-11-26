@@ -8,6 +8,7 @@ edit_uri: edit/main/docs/
 nav:
     - Home: index.md
     - Study Guide: study_guide.md
+    - Practice Exam: practice-exam.md
     - Outline: outline.md
     - 1 - License Basics:
         - Overview: 01-license/index.md
