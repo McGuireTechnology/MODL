@@ -61,6 +61,10 @@
 
   function init(){
     document.querySelectorAll('div.flashcards').forEach(node=>{
+      // Skip if already initialized
+      if(node.hasAttribute('data-flashcards-initialized')) return;
+      node.setAttribute('data-flashcards-initialized', 'true');
+      
       const cards = parseCards(node);
       if(cards.length){
         renderCards(node, cards);
@@ -68,9 +72,53 @@
     });
   }
 
+  // Handle initial page load
   if(document.readyState === 'loading'){
     document.addEventListener('DOMContentLoaded', init);
   } else {
     init();
+  }
+
+  // Handle MkDocs Material instant navigation
+  // Re-initialize flashcards when content changes
+  document.addEventListener('DOMContentLoaded', function() {
+    // MkDocs Material uses 'instant' navigation which fires custom events
+    var observer = new MutationObserver(function(mutations) {
+      var hasNewFlashcards = false;
+      mutations.forEach(function(mutation) {
+        mutation.addedNodes.forEach(function(node) {
+          if (node.nodeType === 1) { // Element node
+            if (node.classList && node.classList.contains('flashcards')) {
+              hasNewFlashcards = true;
+            } else if (node.querySelector && node.querySelector('.flashcards')) {
+              hasNewFlashcards = true;
+            }
+          }
+        });
+      });
+      if (hasNewFlashcards) {
+        setTimeout(init, 100);
+      }
+    });
+
+    // Observe the main content area for changes
+    var content = document.querySelector('.md-content');
+    if (content) {
+      observer.observe(content, {
+        childList: true,
+        subtree: true
+      });
+    }
+  });
+
+  // Also listen for location changes (works with instant navigation)
+  if (typeof window !== 'undefined') {
+    var lastLocation = window.location.href;
+    setInterval(function() {
+      if (window.location.href !== lastLocation) {
+        lastLocation = window.location.href;
+        setTimeout(init, 200);
+      }
+    }, 500);
   }
 })();
