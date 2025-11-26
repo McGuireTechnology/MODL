@@ -8,7 +8,6 @@ edit_uri: edit/main/docs/
 nav:
     - Home: index.md
     - Study Guide: study_guide.md
-    - Practice Exam: practice-exam.md
     - Outline: outline.md
     - 1 - License Basics:
         - Overview: 01-license/index.md
@@ -55,6 +54,9 @@ nav:
     - 16 - Distracted Driving:
         - Overview: 16-distracted/index.md
         - Quiz: 16-distracted/quiz.md
+    - Practice Exam 1: practice-exam.md
+    - Practice Exam 2: practice-exam-2.md
+    - Practice Exam 3: practice-exam-3.md
   
   
 theme:
